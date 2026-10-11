@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>哆啦A梦</title>
+    <!-- TODO 这里完成样式的设置 -->
+    <style>
+        .header{
+            width:400px;
+            height:360px;
+            background-color:#11a3e3;
+            border-radius:50%;
+            border:2px solid #000000;
+            margin:auto;
+        }
+        .face{
+            width:350px;
+            height:300px;
+            background-color:#FFFFFF;
+            border-radius:50%;
+            border:2px solid #000000;
+            margin:64px auto 0px auto;
+            position:relative;
+        }
+        .eye{
+            width:172px;
+            margin:-20px auto;
+            display:flex;
+            position:relative;
+        }
+        .left{
+            border:2px solid #000000;
+            background-color:#FFFFFF;
+            border-radius:50%;
+            width:80px;
+            height:100px;
+            transform:rotate(12deg);
+            position:absolute;
+            left:92px;
+            top:-30;
+            
+        }
+        .right{
+            border:2px solid #000000;
+            background-color:#FFFFFF;
+            border-radius:50%;
+            width:80px;
+            height:100px;
+            transform:rotate(-12deg);
+            position:absolute;
+            left:175px;
+            top:-30;
+        }
+        .blackeye{
+            width:26px;
+            height:34px;
+            background-color:#000000;
+            border-radius:50%;
+            position:absolute;
+            left:44px;
+            top:25px;
+        }
+        .rblackeye{
+            width:26px;
+            height:34px;
+            background-color:#000000;
+            border-radius:50%;
+            position:absolute;
+            left:9px;
+            top:24px;
+        }
+        .whiteeye{
+            width:7px;
+            height:11px;
+            background-color:#FFFFFF;
+            border-radius:50%;
+            position:absolute;
+            border:2px solid #000000;
+            position:absolute;
+            left:6px;
+            top:8px;
+        }
+        .rwhiteeye{
+             width:7px;
+            height:11px;
+            background-color:#FFFFFF;
+            border-radius:50%;
+            position:absolute;
+            border:2px solid #000000;
+            position:absolute;
+            left:6px;
+            top:8px;
+        }
+    
+        .nose{
+            width:100%;
+            position:relative;
+        }
+        .rednose{
+            width:50px;
+            height:50px;
+            background-color:#FF0000;
+            border:2px solid #000000;
+            border-radius:50%;
+            position:absolute;
+            left:147px;
+            top:50px;
+        }
+        .whitenose{
+            width:13px;
+            height:13px;
+            background-color:#FFFFFF;
+            border-radius:50%;
+            position:absolute;
+            left:19px;
+            top:12px;
+        }
+        .beard{
+            position:absolute;
+            width:150px;
+            height:100px;
+        }
+        .left_beard,.right_beard{
+            width:50%;
+            height:150px;
+        }
+        .l_first{
+            width:90px;
+            height:2px;
+            background-color:#000000;
+            transform:rotate(25deg);
+            position:absolute;
+            left:50px;
+            top:100px;
+        }
+        .l_second{
+            width:90px;
+            height:2px;
+            background-color:#000000;
+            position:absolute;
+            left:50px;
+            top:140px;
+        }
+        .l_third{
+            width:90px;
+            height:2px;
+            background-color:#000000;
+            position:absolute;
+            transform:rotate(-25deg);
+            left:50px;
+            top:182px;
+        }
+
+        .r_first{
+            width:90px;
+            height:2px;
+            background-color:#000000;
+            position:absolute;
+            transform:rotate(-25deg);
+            left:210px;
+            top:97.5px;
+        }
+        .r_second{
+            width:90px;
+            height:2px;
+            background-color:#000000;
+            position:absolute;
+            left:210px;
+            top:138.5px;
+        }
+        .r_third{
+            width:90px;
+            height:2px;
+            background-color:#000000;
+            position:absolute;
+            transform:rotate(25deg);
+            left:210px;
+            top:181.5px;
+        }
+        .Vertical{
+            width:120px;
+            height:2px;
+            background-color:#000000;
+            transform:rotate(90deg);
+            position:relative;
+            margin:170px auto 0 auto;
+        }
+        .Arc{
+            width:150px;
+            height:25px;
+            border:2px solid #000000;
+            border-radius:0 0 50% 50%/0 0 100% 100%;
+            position:absolute;
+            border-top:none;
+            left:98px;
+            bottom:70px;
+        }
+        .redneck{
+            width:300px;
+            height:260px;
+            background-color:red;
+            border-radius:50%;
+            border:2px solid ;
+            margin:-240px auto;
+        }
+        .bell{
+            width:60px;
+            height:60px;
+            background-color:yellow;
+            border-radius:50%;
+            margin:225px auto;
+            border:2px solid ;
+        }
+        .bell_line{
+            width:55px;
+            height:4px;
+            background-color:yellow;
+            border:2px solid ;
+            border-radius:5px;
+            margin:10px auto;
+        }
+        .round{
+            width:10px;
+            height:10px;
+            background-color:red;
+            border:2px solid ;
+            border-radius:50%;
+            margin:15px auto;
+
+        }
+        .hanging{
+            width:3px;
+            height:15px;
+            background-color:black;
+            margin:-15px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="face">
+            <div class="eyes">
+                <div class="left">
+                    <div class="blackeye">
+                        <div class="whiteeye"></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="rblackeye">
+                        <div class="rwhiteeye"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nose">
+                <div class="rednose">
+                    <div class="whitenose"></div>
+                </div>
+            </div>
+            <div class="beard">
+                <div class="left_beard">
+                    <div class="l_first"></div>
+                    <div class="l_second"></div>
+                    <div class="l_third"></div>
+                </div>
+                <div class="right_beard">
+                    <div class="r_first"></div>
+                    <div class="r_second"></div>
+                    <div class="r_third"></div>
+                </div>
+            </div>
+            <div class="line">
+                <div class="Vertical"></div>
+                <div class="Arc"></div>
+            </div>
+        </div>
+        <div class="neck">
+            <div class="redneck"></div>
+            <div class="bell">
+                <div class="bell_line"></div>
+                <div class="round"></div>
+                <div class="hanging"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
